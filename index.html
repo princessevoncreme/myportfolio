@@ -12,6 +12,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
         <link href="css/agency.css" rel="stylesheet">
+        <link href="css/justifiedGallery.min.css" rel="stylesheet">
         <!-- Custom Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
@@ -22,6 +23,7 @@
         rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700"
         rel="stylesheet" type="text/css">
+		
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
         queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file://
@@ -452,20 +454,33 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
+                        <div class="col-lg-10 col-lg-offset-1">
                             <div class="modal-body">
                                 <h2>"AMADEUS" BY pETER shaffer</h2>
                                 <p class="item-intro text-muted">18th century menswear</p>
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2 ducret-5.jpg"
-                                alt="">
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-4.jpg"
-                                alt="">
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2 (1).jpg"
-                                alt="">
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-1.jpg">
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-3.jpg">
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-3.jpg">
-                                <img class="img-responsive img-centered" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine ducret-3-2.jpg">
+								<div class="applyJustifiedGallery">		
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2 ducret-5.jpg">
+										<img alt="caption for image 1" src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2 ducret-5.jpg">
+									</a>
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-4.jpg">
+										<img src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-4.jpg">
+									</a>
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2 (1).jpg">
+										<img src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2 (1).jpg">
+									</a>
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-1.jpg">
+										<img src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-1.jpg">
+									</a>
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-3.jpg">
+										<img src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-2-3.jpg">
+									</a>
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-3.jpg">
+										<img src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine-3.jpg">
+									</a>
+									<a href="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine ducret-3-2.jpg">
+										<img src="img\portfolio\Costumes\Amadeus\Photo Argiel del mundo\celine ducret-3-2.jpg">
+									</a>
+								</div>
                                 <p>Photos by Argiel Del Mundo&nbsp;
                                     <br>Wig &amp; Hair style by Megan Norris
                                     <br>
@@ -668,7 +683,19 @@
         <script src="js/jqBootstrapValidation.js"></script>
         <script src="js/contact_me.js"></script>
         <!-- Custom Theme JavaScript -->
-        <script src="js/agency.js"></script>
+        <script src="js/agency.js"></script>		
+        <script src="js/jquery.justifiedGallery.min.js"></script>
+        <!-- Custom script for gallery -->		
+		<script type="text/javascript">				
+		$(".applyJustifiedGallery").each(function(i, obj) {
+					$(obj).justifiedGallery({
+						rowHeight : 350,
+						lastRow : 'justify',
+						margins : 3
+					});
+				});
+			
+		</script>		
     </body>
 
 </html>
